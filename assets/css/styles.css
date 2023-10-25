@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+}
+
 .btn {
     display: inline-block;
     min-width: 186px;
@@ -27,8 +31,15 @@ a {
     text-align: center;
     border-radius: 6px;
     border: 1px solid #1EBFC1;
-    color: #1EBFC1;
+    color: #fff;
+    background: #1EBFC1;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 .main-content {
@@ -55,6 +66,10 @@ a {
     gap: 39px;
 }
 
+.nav li a {
+    padding: 12px 0;
+}
+
 .nav a:hover,
 .nav li.active a{
     text-shadow: 1px 0 0 currentColor;
@@ -70,11 +85,200 @@ a {
     margin-left: 177px;
 }
 
+.header .cta a {
+    color: #494949;
+    background: transparent;
+}
+
 .header .cta a:last-child {
     margin-left: 24px;
 }
 
 .header .cta .btn{
+    color: #1EBFC1;
     min-width: 108px;
     line-height: 48px;
+}
+
+/* ========== Header ========== */
+
+.hero {
+    margin-top: 50px;
+    margin-bottom: 79px;
+}
+
+.hero-body {
+    display: flex;
+    align-items: center;
+}
+
+.hero-body span {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #767E7E;
+    font-size: 1.4rem;
+}
+
+.hero-body .heading {
+    width: 458px;
+    margin-bottom: 46px;
+    color: #0D1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16; /* 116.129% */
+}
+
+.hero-body .desc {
+    width: 374px;
+    margin-bottom: 52px;
+    color: #9DA6A5;
+    font-size: 1.8rem;
+    line-height: 1.77; /* 177.778% */
+}
+
+.hero-body .hero-cta {
+    display: flex;
+    gap: 50px;
+}
+
+.hero-body .hero-cta .btn-start{
+    font-size: 1.8rem;
+    border-radius: 14px;
+}
+
+.hero-body .hero-cta .play {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);  
+}
+
+.hero-body .image {
+    position: relative;
+    width: 49%;
+    margin-left: auto;
+}
+
+.hero-body .image .spot-img {
+    width: 100%;
+}
+
+.hero-body .courses {
+    position: absolute;
+    top: 150px;
+    left: -42px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 157px;
+    padding: 18px 25px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-body .courses .info {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero-body .courses img {
+    width: 36px;
+    height: 40px;
+}
+
+.hero-body .courses .info p {
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-body .schedules {
+    position: absolute;
+    width: 124px;
+    height: 132px;
+    left: -60px;
+    bottom: 70px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.schedules-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 16px 25px 23px;
+}
+
+.hero-body .title {
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+
+.hero-body .schedule {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    margin-bottom: 10px;
+    background: #EDF1F5;
+    border-radius: 3px;
+}
+
+.hero-body .schedule:last-child {
+    margin: 6px auto 0;
+    width: 26px;
+}
+
+.hero-body .schedule .load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: #FB9899;
+    z-index: 1;
+}
+
+.hero-body .schedule:nth-child(2) .load {
+    width: 52%;
+}
+
+.hero-body .schedule:nth-child(3) .load {
+    width: 70%;
+}
+
+.hero-body .schedule:nth-child(4) .load {
+    width: 42%;
+}
+
+.hero-body .active-students {
+    position: absolute;
+    right: 46px;
+    bottom: 41px;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #FEFEFD;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-body .active-students__body {
+    margin: 17px 35px;
+}
+
+.hero-body .active-students .avatar {
+    width: 33px;
+    height: 33px;
+    margin-left: -12px;
+    border-radius: 50%;
 }
