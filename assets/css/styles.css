@@ -282,3 +282,67 @@ button {
     margin-left: -12px;
     border-radius: 50%;
 }
+
+/* ========== Feature ========== */
+
+.features {
+    margin-top: 130px;
+}
+
+.features .cmt {
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.features .title {
+    width: 49%;
+    margin: 18px 0;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+}
+
+.features .desc {
+    width: 50%;
+    margin-bottom: 80px;
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 209px;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature-item .icon {
+    width: 102px;
+    height: 106px;
+}
+
+.feature-title {
+    margin: 26px 0 16px;
+    color: #0D1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature-desc {
+    color: #9DA6A5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.68; /* 168.75% */
+}
+
+/* ========== Courses ========== */
+
