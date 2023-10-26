@@ -279,8 +279,12 @@ button {
 .hero-body .active-students .avatar {
     width: 33px;
     height: 33px;
-    margin-left: -12px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-body .active-students .avatar + .avatar {
+    margin-left: -10px;
 }
 
 /* ========== Feature ========== */
@@ -346,3 +350,128 @@ button {
 
 /* ========== Courses ========== */
 
+.courses {
+    margin-top: 130px;
+}
+
+.courses .cmt {
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.courses .title {
+    margin: 18px 0;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.courses .desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 79px;
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.77; /* 177.778% */
+}
+
+.courses .desc span {
+    width: 45%;
+}
+
+.courses .desc .view-courses {
+    color: #1EBFC1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.courses .desc .view-courses:hover {
+    opacity: 0.9;
+}
+
+.courses-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses-item {
+    position: relative;
+}
+
+.courses-item .icon {
+    width: 359px;
+    height: 393px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.courses-info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -115px;
+    width: 325px;
+    min-height: 165px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses-info .content {
+    margin: 18px 0 0 25px;
+}
+
+.courses-title {
+    margin-bottom: 16px;
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses-price {
+    margin-bottom: 12px;
+    color: #767E7E;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.courses-price span {
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses-desc {
+    margin-bottom: 18px;
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.courses-time {
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.courses-time span {
+    position: relative;
+    margin: 0 12px;
+}
+
+.courses-time span::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1EBFC1;
+}
